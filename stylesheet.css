@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.example-box {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+    width: 95%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/*Container styling*/
+.container {
+    background-color: white;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 90%;
+    height: 350px;
+}
+
+.container div {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 125px;
+    height: 125px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-content: center;
+}
