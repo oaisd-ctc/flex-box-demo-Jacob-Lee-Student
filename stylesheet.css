@@ -12,8 +12,19 @@ h1 {
 .example-box {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1%;
     padding-bottom: 25px;
     width: 95%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.example-box h3 {
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    width: fit-content;
+    padding: 1%;
     border-radius: 10px;
     border: 2px solid white;
 }
@@ -21,27 +32,46 @@ h1 {
 /*Container styling*/
 .container {
     background-color: white;
+    color: black; 
     display: flex;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     width: 90%;
-    height: 350px;
 }
 
 .container div {
     background-color: black;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1% auto;
     border-radius: 15px;
     width: 125px;
     height: 125px;
 }
 
+/* flex wrap */
 .wrap {
     flex-wrap: wrap;
 }
 
-.align-center {
-    align-content: center;
+/* flex direction */
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+/* flex wrap */
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+/* flex flow */
+.flex-flow {
+    flex-flow: row wrap;
 }

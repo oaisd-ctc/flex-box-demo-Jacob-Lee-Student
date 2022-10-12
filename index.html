@@ -8,15 +8,75 @@
         <h1>Flex-Box Examples</h1>
         <div class="example-box">
             <h2>Flex-Box Container Properties</h2>
-            <h3>align-content</h3>
-            <div class="container wrap align-center">
-                <!-- <h3>align-content: center;</h3> -->
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <hr>
+            <h3>flex-direction</h3>
+            <div>
+                <h4>flex-direction: row; (default)</h4>
+                <div class="container flex-direction-row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <h4>flex-direction: column;</h4>
+                <div class="container flex-direction-column">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <h3>flex-wrap</h3>
+            <p>Resize the page to see how the flex-wrap property effects the content</p>
+            <div>
+                <h4>flex-wrap: nowrap; (default)</h4>
+                <div class="container flex-wrap-nowrap">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>   
+                </div>
+            </div>
+            <div>
+                <h4>flex-wrap: wrap;</h4>
+                <div class="container flex-wrap-wrap">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <h3>flex-flow</h3>
+            <p>The flex-flow property is a combination of the flex-direction and the flex-flow properties.
+                You can combine both in order to save space in your CSS.
+            </p>
+            <div>
+                <h4>flex-flow: row wrap;</h4>
+                <div class="container flex-flow">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="example-box">
+            <h2>Flex-Box Item Properties</h2>
+            <hr>
+            <h3>flex-grow</h3>
+            <div class="container">
+                <div style="flex-grow: 2"></div>
+                <div style="flex-grow: 3"></div>
+                <div style="flex-grow: 1"></div>
+                <div style="flex-grow: 4"></div>
             </div>
         </div>
     </body>
