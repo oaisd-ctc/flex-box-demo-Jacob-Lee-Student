@@ -1,0 +1,178 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.example-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    padding-bottom: 25px;
+    width: 95%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.example-box h2 {
+    border-bottom: 2px solid white; 
+    padding-bottom: 10px; 
+}
+.example-box h3 {
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/*Container styling*/
+.container {
+    background-color: white;
+    color: black; 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.container div {
+    background-color: black;
+    margin: 1% auto;
+    border-radius: 15px;
+    width: 125px;
+    height: 125px;
+}
+
+/* flex wrap */
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* flex direction */
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+/* flex wrap */
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+/* flex flow */
+.flex-flow {
+    flex-flow: row wrap;
+}
+
+/* order */
+.order > div {
+    margin: 1% auto;    
+    display :flex;
+    align-items: center;
+}
+.order p {
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order span {
+    font-size: 0.75em;
+    font-style: italic;
+    margin-top: 3px;
+    display: block;
+}
+
+/* flex grow */
+.flex-grow > div {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.flex-grow p {
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* align self */
+.container-align {
+    background-color: white;
+    color: black; 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 90%;
+    height: 300px;
+}
+
+.container-align div {
+    background-color: black;
+    margin: 1% auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.container-align p {
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* extra credit */
+#container-extra {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+#container-extra div {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    flex: 1;
+    transition-duration: 1s;
+}
+
+#container-extra div:hover {
+    background-color: white;
+    color: black;
+    flex-grow: 2;
+}
+
+.css-example-box {
+    background-color: white;
+    text-align: start;
+    color: black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comment {
+    color: green
+}
