@@ -8,8 +8,8 @@
         <h1>Flex-Box Examples</h1>
         <div class="example-box">
             <h2>Flex-Box Container Properties</h2>
-            <hr>
             <h3>flex-direction</h3>
+            <p>The flex-direction property effects which direction the container stacks items</p>
             <div>
                 <h4>flex-direction: row; (default)</h4>
                 <div class="container flex-direction-row">
@@ -29,7 +29,10 @@
                 </div>
             </div>
             <h3>flex-wrap</h3>
-            <p>Resize the page to see how the flex-wrap property effects the content</p>
+            <p>
+                The flex-wrap property controls whether or not the flex items in the container should wrap
+                <br>Resize the page to see how the flex-wrap property effects the content
+            </p>
             <div>
                 <h4>flex-wrap: nowrap; (default)</h4>
                 <div class="container flex-wrap-nowrap">
@@ -53,9 +56,7 @@
                 </div>
             </div>
             <h3>flex-flow</h3>
-            <p>The flex-flow property is a combination of the flex-direction and the flex-flow properties.
-                You can combine both in order to save space in your CSS.
-            </p>
+            <p>The flex-flow property is a combination of the flex-direction and the flex-flow properties</p>
             <div>
                 <h4>flex-flow: row wrap;</h4>
                 <div class="container flex-flow">
@@ -70,14 +71,85 @@
         </div>
         <div class="example-box">
             <h2>Flex-Box Item Properties</h2>
-            <hr>
+            <h3>order</h3>
+            <p>The order property controls the order that flex items will appear</p>
+            <div class="container order">
+                <div style="order: 3;"><p>1 <span>order: 3;</span></p></div>
+                <div style="order: 1;"><p>2 <span>order: 1;</span></p></div>
+                <div style="order: 4;"><p>3 <span>order: 4;</span></p></div>
+                <div style="order: 2;"><p>4 <span>order: 2;</span></p></div>
+            </div>
             <h3>flex-grow</h3>
-            <div class="container">
-                <div style="flex-grow: 2"></div>
-                <div style="flex-grow: 3"></div>
-                <div style="flex-grow: 1"></div>
-                <div style="flex-grow: 4"></div>
+            <p>The flex-grow property controls how flex items will grow relative to the other flex items</p>
+            <div class="container flex-grow">
+                <div style="flex-grow: 1"><p>flex-grow: 1;</p></div>
+                <div style="flex-grow: 2"><p>flex-grow: 2;</p></div>
+                <div style><p>N/A</p></div>
+                <div style="flex-grow: 3"><p>flex-grow: 3;</p></div>
+            </div>
+            <h3>align-self</h3>
+            <p>The align-self property controls the alignment of an item</p>
+            <div class="container-align">
+                <div><p>N/A</p></div>
+                <div style="align-self: center;"><p>align-self: center;</p></div>
+                <div style="align-self: flex-start;"><p>align-self: flex-start;</p></div>
+                <div style="align-self: flex-end;"><p>align-self: flex-end;</p></div>
+            </div>
+        </div>
+        <div class="example-box">
+            <h2>Extra Credit</h2>
+            <h3>:hover</h3>
+            <p>The :hover psuedo-class specifies that when an element is being hovered over by the mouse, an action is preformed. <br>This can be changing the color, size, or visability of an element
+            </p>
+            <div id="container-extra">
+                <div><p>&nbsp</p></div>
+                <div><p>&nbsp</p></div>
+                <div><p>&nbsp</p></div>
+            </div>
+            <p>
+                Using the <i>flex-grow</i> property in our <i>:hover</i> psuedo-class we can expand
+                one of our div. <br>If we add a <i>flex</i> property with a value of 1
+                in our div declaration it'll control the div's basis and how much it'll
+                shrink when a different div is hovered over.
+            </p>
+            <h3>Example Code</h3>
+            <div class="css-example-box">
+<!--horrible formating for faux example code -->
+<pre>&#60;!DOCTYPE html&#62;
+&#60;html&#62;
+    &#60;head&#62;
+        &#60;style&#62;
+            #container {
+                display: flex; <span class="comment">/*creates a flex container*/</span>
+                margin-left: auto;
+                margin-right: auto;
+                width: 500px;
+            }
+            
+            #container div {
+                background-color: black; 
+                border: 2px solid white;
+                border-radius: 10px;
+                flex: 1; <span class="comment">/*controls the basis and the shrink value*/</span>
+                transition-duration: 1s; <span class="comment">/*tells the browser how long the animate will play for*/</span>
+            }
+
+            #container div:hover { <span class="comment">/*when a div is hovered over, it will apply these changes to it*/</span>
+                background-color: white;
+                color: black; 
+                flex-grow: 2; <span class="comment">/*tells the browser to expand the div that is being hovered over*/</span>
+            }
+        &#60;/style&#62;
+    &#60;/head&#62;
+    &#60;body&#62;
+        &#60;div id="container"&#62; <span class="comment">&#60;!--this is the html to make the above container work--&#62;</span>
+            &#60;div&#62;&#60;p&#62;&amp;nbsp&#60;/p&#62;&#60;/div&#62;
+            &#60;div&#62;&#60;p&#62;&amp;nbsp&#60;/p&#62;&#60;/div&#62;
+            &#60;div&#62;&#60;p&#62;&amp;nbsp&#60;/p&#62;&#60;/div&#62;
+        &#60;/div&#62;
+    &#60;/body&#62;
+&#60;/html&#62;</pre>
             </div>
         </div>
     </body>
-</html>
+</html> 
